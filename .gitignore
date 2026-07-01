@@ -1,0 +1,10 @@
+# Vercel deployment folder
+.vercel/
+
+# OS system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

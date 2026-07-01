@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AromaCraft | Artisanal Craft Coffee Subscription</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience premium freshly-roasted craft coffee delivered directly to your doorstep on your custom schedule. Experience AromaCraft today.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY HEADER & NAVBAR
+       ========================================================================== -->
+  <header class="header-wrapper" id="navbar-header" data-learn="sticky-nav">
+    <div class="container">
+      <nav class="navbar" id="main-nav">
+        <!-- Brand Logo -->
+        <a href="#" class="logo" id="logo-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+            <line x1="6" y1="2" x2="6" y2="4"></line>
+            <line x1="10" y1="2" x2="10" y2="4"></line>
+            <line x1="14" y1="2" x2="14" y2="4"></line>
+          </svg>
+          Aroma<span>Craft</span>
+        </a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button class="menu-toggle" id="menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-menu">
+          <a href="#hero" class="nav-item">Home</a>
+          <a href="#about" class="nav-item">Why Us</a>
+          <a href="#testimonials" class="nav-item">Testimonials</a>
+          <a href="tutorial.md" target="_blank" class="nav-item" style="color: var(--color-primary);">View Tutorial.md</a>
+        </div>
+
+        <!-- Desktop Action CTA -->
+        <a href="#cta" class="btn btn-nav">Subscribe Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO PAGE
+       ========================================================================== -->
+  <section class="hero" id="hero" data-learn="hero-flex">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <p class="hero-tagline">Freshly Roasted • Smart Subscriptions</p>
+          <h1 class="hero-title">Elevate Your Morning Ritual</h1>
+          <p class="hero-description">Experience premium, ethically-sourced single-origin beans roasted to precision and delivered directly to your doorstep at peak freshness.</p>
+          <div class="hero-ctas">
+            <a href="#about" class="btn">Explore Custom Roasts</a>
+            <a href="#cta" class="btn btn-secondary">Get 10% Off First Bag</a>
+          </div>
+        </div>
+
+        <!-- Hero Graphic Container -->
+        <div class="hero-image-container" data-learn="hero-image-animation">
+          <div class="hero-image-wrapper">
+            <img src="assets/hero_coffee.png" alt="Steaming artisanal espresso cup on wooden table" class="hero-image">
+          </div>
+          <!-- Floating UI Badge with animations -->
+          <div class="floating-badge">
+            <span class="badge-icon">☕</span>
+            <div class="badge-text">
+              <h4>Roast of the Day</h4>
+              <p>Ethiopian Yirgacheffe - Medium Light</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3-CARD FEATURES SECTION
+       ========================================================================== -->
+  <section class="features" id="about">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-header">
+        <p class="section-tagline">Why AromaCraft</p>
+        <h2 class="section-title">A Smarter Way to Sip</h2>
+        <p>We are redefining your home-brewing experience by combining artisan craftsmanship with intelligent scheduling.</p>
+      </div>
+
+      <!-- Feature Cards Grid -->
+      <div class="features-grid" data-learn="features-mobile-first">
+        <!-- Feature Card 1 -->
+        <article class="feature-card" data-learn="card-hover-animation">
+          <div class="feature-card-image-wrapper">
+            <img src="assets/beans.png" alt="Close up photo of high quality roasted coffee beans" class="feature-card-image">
+          </div>
+          <div class="feature-card-content">
+            <div class="feature-card-icon">🌍</div>
+            <h3 class="feature-card-title">Ethical Sourcing</h3>
+            <p class="feature-card-text">We source directly from sustainable micro-lot farms, paying 45% above Fair Trade prices to support farming communities globally.</p>
+          </div>
+        </article>
+
+        <!-- Feature Card 2 -->
+        <article class="feature-card" data-learn="card-hover-animation">
+          <div class="feature-card-image-wrapper">
+            <img src="assets/roast.png" alt="A high-tech modern sample coffee roaster machine" class="feature-card-image">
+          </div>
+          <div class="feature-card-content">
+            <div class="feature-card-icon">🔥</div>
+            <h3 class="feature-card-title">Precision Roasting</h3>
+            <p class="feature-card-text">Every small batch is custom profile-roasted to pull out unique tasting notes—from bright citrus acidity to rich dark chocolate notes.</p>
+          </div>
+        </article>
+
+        <!-- Feature Card 3 -->
+        <article class="feature-card" data-learn="card-hover-animation">
+          <div class="feature-card-image-wrapper">
+            <img src="assets/delivery.png" alt="A premium minimalist kraft-paper coffee subscription package bag" class="feature-card-image">
+          </div>
+          <div class="feature-card-content">
+            <div class="feature-card-icon">📅</div>
+            <h3 class="feature-card-title">Smart Delivery</h3>
+            <p class="feature-card-text">Tell us how often you brew. Our smart algorithm automatically schedules roasts to reach you exactly 48 hours after cooling.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section class="testimonials" id="testimonials" data-learn="testimonials-flex">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tagline">Member Testimonials</p>
+        <h2 class="section-title">Brewed with Love</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <span class="quote-icon">“</span>
+          <p class="testimonial-text">"The beans arrive within 48 hours of roasting. The freshness is unmatched, and the custom schedule fits my hectic work week perfectly."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Sarah K." class="author-image">
+            <div class="author-info">
+              <h4>Sarah K.</h4>
+              <p>Tech Founder & Espresso Enthusiast</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <span class="quote-icon">“</span>
+          <p class="testimonial-text">"I love being able to tweak my roast profile online. AromaCraft has elevated my morning coffee ritual into a true artisanal experience."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Marcus T." class="author-image">
+            <div class="author-info">
+              <h4>Marcus T.</h4>
+              <p>Product Designer & Latte Art Amateur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CALL TO ACTION (CTA) SECTION
+       ========================================================================== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Ready for Better Mornings?</h2>
+        <p class="cta-description">Select your favorite flavor profile, choose your delivery frequency, and start enjoying the freshest cup of coffee imaginable.</p>
+        <a href="#" class="btn" onclick="alert('Welcome to AromaCraft! Your subscription journey has simulated starting.'); return false;">Claim Your Roast</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" data-learn="footer-flex">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);">
+              <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+              <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+              <line x1="6" y1="2" x2="6" y2="4"></line>
+              <line x1="10" y1="2" x2="10" y2="4"></line>
+              <line x1="14" y1="2" x2="14" y2="4"></line>
+            </svg>
+            Aroma<span>Craft</span>
+          </a>
+          <p>Delivering high-tech, small-batch specialty coffee on a custom schedule designed for you.</p>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-nav">
+          <div class="footer-links-group">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">Why Us</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Sourcing Details</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 AromaCraft Inc. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+          <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+          <a href="#" class="social-icon" aria-label="Facebook">👤</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE "LEARN MODE" PANEL
+       ========================================================================== -->
+  <div class="learn-widget" id="learn-widget-wrapper">
+    <button class="learn-fab" id="learn-toggle-btn" title="Toggle Learn Mode" aria-label="Toggle CSS Learn Mode">🎓</button>
+    
+    <aside class="learn-panel" id="learn-drawer" aria-live="polite">
+      <h3>🎓 CSS Learn Dashboard</h3>
+      <p class="learn-panel-text" id="learn-prompt">
+        <strong>How to use:</strong> Hover and click on any highlighted section on the page (dotted gold outline) to see details about the Flexbox, animations, mobile-first code, or sticky navbar rules that drive it!
+      </p>
+      
+      <div id="learn-content-section" style="display: none;">
+        <h4 id="learn-element-title" style="margin-bottom: 0.5rem; color: var(--color-primary);">Header Name</h4>
+        <p class="learn-panel-text" id="learn-element-desc" style="margin-bottom: 0.8rem; line-height: 1.4;">Description of how it is designed.</p>
+        
+        <p class="learn-panel-text" style="font-weight: 600; margin-bottom: 0.3rem;">CSS Properties Applied:</p>
+        <div class="code-visualizer" id="learn-code-block">
+          /* CSS will load here */
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- JavaScript for Interactive Learn Mode and Navbar Toggle -->
+  <script>
+    // --- Sticky Navbar Scroll Effect ---
+    const header = document.getElementById('navbar-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // --- Hamburger Mobile Navigation ---
+    const menuBtn = document.getElementById('menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile nav when link clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // --- INTERACTIVE LEARN MODE MECHANICS ---
+    const learnToggleBtn = document.getElementById('learn-toggle-btn');
+    const learnDrawer = document.getElementById('learn-drawer');
+    const learnPrompt = document.getElementById('learn-prompt');
+    const learnContentSection = document.getElementById('learn-content-section');
+    const learnElementTitle = document.getElementById('learn-element-title');
+    const learnElementDesc = document.getElementById('learn-element-desc');
+    const learnCodeBlock = document.getElementById('learn-code-block');
+    
+    let learnModeActive = false;
+    let highlightOverlay = null;
+
+    // Data for tutorials
+    const tutorialsData = {
+      'sticky-nav': {
+        title: "Sticky Navbar",
+        desc: "Designed using CSS <code>position: sticky</code>. This navbar flows naturally on the page until it touches the top (<code>top: 0</code>), at which point it pins itself as you scroll. A scroll event listener toggles the <code>.scrolled</code> class in JavaScript, allowing us to shrink the padding and increase the background opacity dynamically.",
+        code: `<span class="css-comment">/* Pin navbar dynamically to top */</span>
+<span class="css-prop">position</span>: <span class="css-val">sticky</span>;
+<span class="css-prop">top</span>: <span class="css-val">0</span>;
+<span class="css-prop">z-index</span>: <span class="css-val">1000</span>;
+<span class="css-prop">background-color</span>: <span class="css-val">rgba(18, 10, 7, 0.75)</span>;
+<span class="css-prop">backdrop-filter</span>: <span class="css-val">blur(12px)</span>;
+<span class="css-prop">transition</span>: <span class="css-val">padding 0.3s cubic-bezier(0.16, 1, 0.3, 1)</span>;`
+      },
+      'hero-flex': {
+        title: "Hero Section Flexbox",
+        desc: "Uses a Flexbox grid. By default, it uses a <strong>Mobile-First</strong> vertical flow: <code>flex-direction: column</code>. When the viewport expands to Tablet screens (768px+), a media query flips this to <code>flex-direction: row</code> to align the title content side-by-side with the coffee cup visual.",
+        code: `<span class="css-comment">/* Mobile-First layout */</span>
+.hero-grid {
+  <span class="css-prop">display</span>: <span class="css-val">flex</span>;
+  <span class="css-prop">flex-direction</span>: <span class="css-val">column</span>;
+  <span class="css-prop">gap</span>: <span class="css-val">3rem</span>;
+}
+
+<span class="css-comment">/* Tablet expansion override */</span>
+<span class="css-prop">@media</span> (min-width: 768px) {
+  .hero-grid {
+    <span class="css-prop">flex-direction</span>: <span class="css-val">row</span>;
+    <span class="css-prop">justify-content</span>: <span class="css-val">space-between</span>;
+  }
+}`
+      },
+      'hero-image-animation': {
+        title: "Hero Image scale & Float animation",
+        desc: "Shows two animations in action: 1) A scale-in entrance animation applied to the container on page load using <code>@keyframes scaleIn</code>, and 2) A continuous vertical hovering floating animation on the 'Roast of the Day' badge using <code>@keyframes float</code>.",
+        code: `<span class="css-comment">/* Entrance Scale Animation */</span>
+.hero-image-container {
+  <span class="css-prop">animation</span>: <span class="css-val">scaleIn 1.2s cubic-bezier(...) forwards</span>;
+}
+
+<span class="css-comment">/* Continuous Floating Animation */</span>
+.floating-badge {
+  <span class="css-prop">animation</span>: <span class="css-val">float 4s ease-in-out infinite</span>;
+}
+
+<span class="css-prop">@keyframes</span> float {
+  0%, 100% { <span class="css-prop">transform</span>: <span class="css-val">translateY(0)</span>; }
+  50%      { <span class="css-prop">transform</span>: <span class="css-val">translateY(-10px)</span>; }
+}`
+      },
+      'features-mobile-first': {
+        title: "Mobile-First Grid",
+        desc: "Designed to adapt gracefully. On mobile, cards stack vertically inside a flex column layout. On Tablet viewports (768px+), they change to a row with wrapping permitted. On Desktop screens (1024px+), each card is assigned <code>flex: 1</code>, which instructs Flexbox to distribute columns equally across 100% width.",
+        code: `<span class="css-comment">/* Grid scales from columns to rows */</span>
+.features-grid {
+  <span class="css-prop">display</span>: <span class="css-val">flex</span>;
+  <span class="css-prop">flex-direction</span>: <span class="css-val">column</span>;
+}
+
+<span class="css-prop">@media</span> (min-width: 1024px) {
+  .feature-card {
+    <span class="css-prop">flex</span>: <span class="css-val">1</span>; <span class="css-comment">/* Shared equal width */</span>
+  }
+}`
+      },
+      'card-hover-animation': {
+        title: "Feature Card Hover Animation",
+        desc: "Uses CSS transitions. When hovered, the card lifts upwards using <code>transform: translateY(-8px)</code>, glows using a custom shadow shift, and the nested image scales up slightly. These movements use a smooth bezier timing function for maximum responsiveness.",
+        code: `<span class="css-comment">/* Core transition settings */</span>
+.feature-card {
+  <span class="css-prop">transition</span>: <span class="css-val">transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease</span>;
+}
+
+.feature-card:hover {
+  <span class="css-prop">transform</span>: <span class="css-val">translateY(-8px)</span>;
+  <span class="css-prop">box-shadow</span>: <span class="css-val">0 20px 40px -10px rgba(0,0,0,0.7), var(--shadow-primary)</span>;
+}`
+      },
+      'testimonials-flex': {
+        title: "Testimonials Flexbox Wrap",
+        desc: "The testimonials grid is built using <code>display: flex</code> with wrapping enabled (<code>flex-wrap: wrap</code>). The cards are styled with <code>flex: 1 1 320px</code> which specifies that each card should base itself around 320px width, but expand to fill remaining horizontal rows when wrapped side-by-side on wide screens.",
+        code: `<span class="css-comment">/* Flexible Wrap columns */</span>
+.testimonials-grid {
+  <span class="css-prop">display</span>: <span class="css-val">flex</span>;
+  <span class="css-prop">flex-direction</span>: <span class="css-val">column</span>;
+  <span class="css-prop">gap</span>: <span class="css-val">2rem</span>;
+}
+
+<span class="css-prop">@media</span> (min-width: 768px) {
+  .testimonials-grid {
+    <span class="css-prop">flex-direction</span>: <span class="css-val">row</span>;
+    <span class="css-prop">flex-wrap</span>: <span class="css-val">wrap</span>;
+  }
+  .testimonial-card {
+    <span class="css-prop">flex</span>: <span class="css-val">1 1 320px</span>;
+  }
+}`
+      },
+      'footer-flex': {
+        title: "Footer Flex Columns",
+        desc: "Organized using flexbox structures. On larger screens, the brand overview aligns on the left while submenus stack on the right using a flex container with <code>justify-content: space-between</code>.",
+        code: `<span class="css-comment">/* Spacing components horizontally */</span>
+<span class="css-prop">@media</span> (min-width: 768px) {
+  .footer-grid {
+    <span class="css-prop">flex-direction</span>: <span class="css-val">row</span>;
+    <span class="css-prop">justify-content</span>: <span class="css-val">space-between</span>;
+  }
+  .footer-nav {
+    <span class="css-prop">flex-direction</span>: <span class="css-val">row</span>;
+    <span class="css-prop">gap</span>: <span class="css-val">4rem</span>;
+  }
+}`
+      }
+    };
+
+    // Toggle learn mode active state
+    learnToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      learnModeActive = !learnModeActive;
+      
+      if (learnModeActive) {
+        document.body.classList.add('learn-mode-active');
+        learnToggleBtn.classList.add('active');
+        learnDrawer.classList.add('active');
+        learnToggleBtn.innerHTML = "✖";
+        
+        // Reset dashboard message
+        learnPrompt.style.display = "block";
+        learnContentSection.style.display = "none";
+      } else {
+        deactivateLearnMode();
+      }
+    });
+
+    function deactivateLearnMode() {
+      document.body.classList.remove('learn-mode-active');
+      learnToggleBtn.classList.remove('active');
+      learnDrawer.classList.remove('active');
+      learnToggleBtn.innerHTML = "🎓";
+      learnModeActive = false;
+      removeHighlightOverlay();
+    }
+
+    // Intercept click on data-learn items when learn mode is active
+    document.addEventListener('click', (e) => {
+      if (!learnModeActive) return;
+
+      const learnTarget = e.target.closest('[data-learn]');
+      
+      // If clicked inside the drawer panel, ignore
+      if (e.target.closest('#learn-widget-wrapper')) return;
+
+      if (learnTarget) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const conceptKey = learnTarget.getAttribute('data-learn');
+        const conceptInfo = tutorialsData[conceptKey];
+        
+        if (conceptInfo) {
+          // Display the tutorial content
+          learnPrompt.style.display = "none";
+          learnContentSection.style.display = "block";
+          
+          learnElementTitle.innerHTML = conceptInfo.title;
+          learnElementDesc.innerHTML = conceptInfo.desc;
+          learnCodeBlock.innerHTML = conceptInfo.code;
+          
+          // Scroll drawer if needed
+          learnDrawer.scrollTop = 0;
+
+          // Highlight the clicked element visually
+          drawHighlightOverlay(learnTarget);
+        }
+      } else {
+        // Clicked empty space, remove highlight overlay
+        removeHighlightOverlay();
+      }
+    });
+
+    // Close Learn Mode on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && learnModeActive) {
+        deactivateLearnMode();
+      }
+    });
+
+    // Draw visual highlight overlay on targeted element
+    function drawHighlightOverlay(element) {
+      removeHighlightOverlay();
+      
+      const rect = element.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      highlightOverlay = document.createElement('div');
+      highlightOverlay.className = 'inspected-overlay-highlight';
+      highlightOverlay.style.top = (rect.top + scrollTop - 4) + 'px';
+      highlightOverlay.style.left = (rect.left + scrollLeft - 4) + 'px';
+      highlightOverlay.style.width = (rect.width + 8) + 'px';
+      highlightOverlay.style.height = (rect.height + 8) + 'px';
+      
+      document.body.appendChild(highlightOverlay);
+    }
+
+    function removeHighlightOverlay() {
+      if (highlightOverlay && highlightOverlay.parentNode) {
+        highlightOverlay.parentNode.removeChild(highlightOverlay);
+        highlightOverlay = null;
+      }
+    }
+
+    // Re-adjust highlight overlay position on window resize
+    window.addEventListener('resize', () => {
+      if (!learnModeActive) return;
+      removeHighlightOverlay();
+      learnPrompt.style.display = "block";
+      learnContentSection.style.display = "none";
+    });
+  </script>
+</body>
+</html>
